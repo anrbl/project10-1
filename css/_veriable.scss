@@ -1,0 +1,57 @@
+//variable
+
+$c-w : #fff;
+$c-wb : #f9f8f7;
+$c-line : #e5e5e5;
+$c-9 : #999;
+$c-6 : #666;
+$c-4 : #444;
+$c-3 : #333;
+$c-2 : #222;
+$c-b : #000;
+$c-main : #9a1915;
+$c-sub: #4d4a43;
+$c-point: #d3c6bc;
+
+$gap : 30px;
+$max : 1200px;
+
+
+
+// mixin
+@mixin inner () {
+    max-width: $max;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin pcenter () {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin sec () {
+    padding: 100px 0;
+
+    @media (max-width:768px) {
+        padding: 70px 0;
+    }
+}
+
+
+@mixin blind () {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+@mixin tit () {
+    max-width: $max;
+    margin: 0 auto 38px auto;
+    padding: 0 15px;
+}
